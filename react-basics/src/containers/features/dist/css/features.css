@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+
 .gpt3__features {
   width: 100%;
   display: flex;
@@ -15,13 +26,19 @@
   margin-right: 5rem;
 }
 .gpt3__features .gpt3__features-heading h1 {
+  height: 180px;
+  width: 426px;
+  font-family: "Manrope";
   font-size: 34px;
   line-height: 45px;
   font-weight: 800;
-  font-family: "Manrope";
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .gpt3__features .gpt3__features-heading p {
-  color: var(--color-subtext);
+  color: #ff8a71;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;

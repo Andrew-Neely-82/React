@@ -14,13 +14,19 @@
     text-align: left;
     margin-right: 5rem;
     h1 {
+      height: 180px;
+      width: 426px;
+      font-family: map-get($font-family, manrope);
       font-size: 34px;
       line-height: 45px;
       font-weight: 800;
-      font-family: map-get($font-family, manrope);
+      background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%), #ffffff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     p {
-      color: var(--color-subtext);
+      color: map-get($colors, subtext);
       font-size: 16px;
       line-height: 30px;
       font-weight: 500;

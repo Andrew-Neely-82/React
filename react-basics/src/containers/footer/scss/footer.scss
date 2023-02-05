@@ -8,6 +8,9 @@
   background: var(--color-footer);
 
   .gpt3__footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
@@ -15,7 +18,7 @@
     h1 {
       font-family: map-get($font-family, manrope);
       font-weight: 800;
-      font-size: 64px;
+      font-size: 62px;
       line-height: 75px;
     }
   }

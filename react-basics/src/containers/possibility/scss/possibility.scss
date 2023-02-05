@@ -51,6 +51,20 @@
   }
 }
 
+.gradient__text {
+  height: 90px;
+  width: 426px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @media screen and (max-width: 950px) {
   .gpt3__possibility {
     flex-direction: column;
