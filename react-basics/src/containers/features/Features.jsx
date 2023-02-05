@@ -16,8 +16,8 @@ const featuresData = [
     text: "Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.",
   },
   {
-    title: "Really boy law county",
-    text: "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..",
+    title: "Not the original title",
+    text: "Changing this out because the default supplied text was kinda raunchy...",
   },
 ];
 
