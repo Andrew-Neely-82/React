@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 150px;
+  min-width: 120px;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=brand.css.map */
