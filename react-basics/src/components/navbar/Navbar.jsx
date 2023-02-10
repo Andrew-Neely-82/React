@@ -1,27 +1,50 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import Tooltip from "../../assistance/tooltip/Tooltip";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <Tooltip
+        href="#home"
+        className="menu-item"
+        tooltipClassName="menu-item-tooltip"
+        anchorText="Home"
+        value="Go to the Home page"
+      />
     </p>
     <p>
-      <a href="#wgpt3">What is GPT-3</a>
+      <Tooltip
+        href="#possibility"
+        className="menu-item"
+        tooltipClassName="menu-item-tooltip"
+        anchorText="Open AI"
+        value="Explore the Possibilities"
+      />
     </p>
     <p>
-      <a href="#possibility">Open AI</a>
+      <Tooltip
+        href="#features"
+        className="menu-item"
+        tooltipClassName="menu-item-tooltip"
+        anchorText="Case Studies"
+        value="Explore the Features"
+      />
     </p>
     <p>
-      <a href="#features">Case Studies</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
+      <Tooltip
+        href="#blog"
+        className="menu-item"
+        tooltipClassName="menu-item-tooltip"
+        anchorText="Library"
+        value="See what's going on"
+      />
     </p>
   </>
 );
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
