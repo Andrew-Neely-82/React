@@ -1,20 +1,199 @@
-/* Error: Two forwarded modules both define a variable named $font-family.
- *   ,
- * 1 | @forward "../../../scss/variables";
- *   | ================================== original @forward
- * 2 | @forward "../../../scss/defaults";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @forward
- *   '
- *   scss\_index.scss 2:1  @use
- *   scss\header.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Two forwarded modules both define a variable named $font-family.\a   \2577 \a 1 \2502  @forward "../../../scss/variables";\d\a   \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @forward\a 2 \2502  @forward "../../../scss/defaults";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ new @forward\a   \2575 \a   scss\\_index.scss 2:1  @use\a   scss\\header.scss 1:1  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
 }
+
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040c18;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gpt3__header {
+  display: flex;
+  flex-direction: row;
+}
+.gpt3__header .gpt3__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.gpt3__header .gpt3__header-content h1 {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+.gpt3__header .gpt3__header-content p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #81afdd;
+  margin-top: 1.5rem;
+}
+.gpt3__header .gpt3__header-content .gradient__text {
+  width: 614px;
+  height: 225px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gpt3__header .gpt3__header-content__input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+.gpt3__header .gpt3__header-content__input input {
+  flex: 2;
+  min-height: 50px;
+  width: 100%;
+  color: #fff;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #031b34;
+  border: 2px solid #031b34;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  padding: 0 1rem;
+}
+.gpt3__header .gpt3__header-content__input button {
+  flex: 0.6;
+  min-height: 50px;
+  width: 100%;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #ff4820;
+  border: 2px solid #ff4820;
+  color: #fff;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.gpt3__header .gpt3__header-content__people {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
+}
+.gpt3__header .gpt3__header-content__people img {
+  width: 181.79px;
+  height: 38px;
+}
+.gpt3__header .gpt3__header-content__people p {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0 1rem;
+}
+.gpt3__header .gpt3__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gpt3__header .gpt3__header-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__header {
+    flex-direction: column;
+  }
+  .gpt3__header-content {
+    margin: 0 0 3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gpt3__header-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .gpt3__header-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .gpt3__header-content__people {
+    flex-direction: column;
+  }
+  .gpt3__header-content__people p {
+    margin: 0;
+  }
+  .gpt3__header-content__input input,
+  .gpt3__header-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .gpt3__header-content h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .gpt3__header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .gpt3__header-content__input input,
+  .gpt3__header-content__input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
