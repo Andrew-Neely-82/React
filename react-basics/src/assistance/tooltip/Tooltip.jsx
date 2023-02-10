@@ -6,13 +6,13 @@ const Tooltip = ({ href, className, tooltipClassName, anchorText, value }) => {
   const handleMouseEnter = () => {
     setTimeout(() => {
       setVisibility(true);
-    }, 250);
+    }, 350);
   };
 
   const handleMouseLeave = () => {
     setTimeout(() => {
       setVisibility(false);
-    }, 100);
+    }, 0);
   };
 
   return (
