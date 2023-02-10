@@ -1,5 +1,5 @@
 import React from 'react'
-import "./dist/css/cta.css";
+import "./cta.css";
 
 const CTA = () => (
   <div className="gpt3__cta">

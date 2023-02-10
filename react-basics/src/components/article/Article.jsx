@@ -1,5 +1,5 @@
 import React from "react";
-import "./dist/css/article.css";
+import "./article.css";
 
 const Article = ({ imgUrl, date, text }) => (
   <div className="gpt3__blog-container_article">

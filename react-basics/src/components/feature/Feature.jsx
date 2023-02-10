@@ -1,5 +1,5 @@
 import React from 'react'
-import "./dist/css/feature.css";
+import "./feature.css";
 
 const Feature = ({ title, text }) => (
   <div className="gpt3__features-container__feature">

@@ -2,7 +2,7 @@
 // @import "./variables";
 // @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
-@import './index';
+@import "./defaults";
 
 .gradient__bg {
   background: map-get($gradients, bg);
@@ -47,25 +47,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .section__padding {
-    padding: 4rem;
-  }
-
-  .section__margin {
-    margin: 4rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-
-  .section__margin {
-    margin: 4rem 2rem;
-  }
-}
+@import "./media-queries";
 
 // .App {
 //   text-align: center;
