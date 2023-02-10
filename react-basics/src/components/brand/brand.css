@@ -25,6 +25,9 @@
   justify-content: center;
   align-items: center;
 }
+.gpt3__brand div img:hover {
+  filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.25));
+}
 
 @media screen and (max-width: 550px) {
   .gpt3__blog-container_article-content h3 {

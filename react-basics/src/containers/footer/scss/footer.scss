@@ -22,16 +22,31 @@
       line-height: 75px;
     }
   }
+
   .gpt3__footer-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
     text-align: center;
+    font-weight: bold;
+    transition: 300ms ease-in-out;
+    box-shadow: 0 0 0.5em white;
     padding: 1rem;
     margin-bottom: 10rem;
     cursor: pointer;
 
+    &:is(:hover) p {
+      color: map-get($colors, blog);
+    }
+
+    &:hover {
+      background: white;
+      box-shadow: 0 0 1em white;
+      p:hover {
+        color: map-get($colors, blog);
+      }
+    }
     p {
       font-size: 18px;
       font-family: map-get($font-family, manrope);
@@ -40,6 +55,7 @@
       word-spacing: 2px;
     }
   }
+
   .gpt3__footer-links {
     display: flex;
     justify-content: space-between;
@@ -54,6 +70,7 @@
       margin: 1rem;
     }
   }
+
   .gpt3__footer-links_logo {
     display: flex;
     flex-direction: column;
@@ -61,6 +78,7 @@
     img {
       height: 30px;
       width: 118px;
+      filter: drop-shadow(0 0 0.25em black) drop-shadow(0 0 0.0625em white);
       margin-bottom: 1rem;
     }
 

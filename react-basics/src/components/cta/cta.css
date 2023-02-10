@@ -15,10 +15,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  border: 1px solid white;
   border-radius: 1rem;
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.5);
   padding: 2rem;
   margin: 4rem;
-  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
 }
 
 .gpt3__cta-content {
@@ -27,14 +29,17 @@
   color: #fff;
   text-align: left;
 }
-.gpt3__cta-content p {
+.gpt3__cta-content p,
+.gpt3__cta-content h3 {
   font-family: "Manrope";
+  filter: drop-shadow(0.125em 0.125em 0.125em black);
+}
+.gpt3__cta-content p {
   font-size: 12px;
   line-height: 30px;
   font-weight: 500;
 }
 .gpt3__cta-content h3 {
-  font-family: "Manrope";
   font-size: 24px;
   line-height: 45px;
   font-weight: 800;
@@ -57,6 +62,7 @@
   border-radius: 2rem;
   border: none;
   outline: none;
+  filter: drop-shadow(0.12em 0.12em 0.12em rgba(0, 0, 0, 0.5));
   padding: 0.5rem 1rem;
   cursor: pointer;
 }

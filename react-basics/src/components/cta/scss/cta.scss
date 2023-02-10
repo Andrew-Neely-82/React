@@ -5,10 +5,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: map-get($gradients, bar);
+  border: 1px solid white;
   border-radius: 1rem;
+  box-shadow: 0 0 1em rgba(255 255 255 / 0.5);
   padding: 2rem;
   margin: 4rem;
-  background: map-get($gradients, bar);
 }
 
 .gpt3__cta-content {
@@ -16,14 +18,17 @@
   flex-direction: column;
   color: #fff;
   text-align: left;
-  p {
+  p,
+  h3 {
     font-family: map-get($font-family, manrope);
+    filter: drop-shadow(0.125em 0.125em 0.125em black);
+  }
+  p {
     font-size: 12px;
     line-height: 30px;
     font-weight: 500;
   }
   h3 {
-    font-family: map-get($font-family, manrope);
     font-size: 24px;
     line-height: 45px;
     font-weight: 800;
@@ -46,6 +51,7 @@
     border-radius: 2rem;
     border: none;
     outline: none;
+    filter: drop-shadow(0.12em 0.12em 0.12em rgba(0 0 0 / 0.5));
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
