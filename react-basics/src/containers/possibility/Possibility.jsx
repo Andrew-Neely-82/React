@@ -1,6 +1,6 @@
 import React from "react";
 import possibilityImage from "../../assets/possibility.png";
-import "./dist/css/possibility.css";
+import "./possibility.css";
 
 const Possibility = () => (
   <div className="gpt3__possibility section__padding" id="possibility">
