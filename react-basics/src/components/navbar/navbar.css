@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+
 .gpt3__navbar {
   display: flex;
   justify-content: space-between;
@@ -22,10 +33,33 @@
   display: flex;
   flex-direction: row;
 }
+.gpt3__navbar .gpt3__navbar-links_container p {
+  transition: 200ms ease-in-out;
+}
+.gpt3__navbar .gpt3__navbar-links_container p:hover {
+  border-bottom: 1px solid white;
+  transition: 200ms ease-in-out;
+}
 .gpt3__navbar .gpt3__navbar-sign {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.gpt3__navbar .gpt3__navbar-sign p {
+  transition: 200ms ease-in-out;
+}
+.gpt3__navbar .gpt3__navbar-sign p:hover {
+  background-color: white;
+  color: #040c18;
+  border-radius: 5px;
+  box-shadow: 0 0 1em white;
+  padding: 8px 16px;
+}
+.gpt3__navbar .gpt3__navbar-sign button {
+  transition: 200ms ease-in-out;
+}
+.gpt3__navbar .gpt3__navbar-sign button:hover {
+  box-shadow: 0 0 1em orangered;
 }
 .gpt3__navbar .gpt3__navbar-links_container p,
 .gpt3__navbar .gpt3__navbar-sign p,
